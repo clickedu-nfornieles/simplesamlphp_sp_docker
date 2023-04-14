@@ -1,0 +1,10 @@
+CONFIG
+===========================================
+1) Rename config.php.dist to config.php
+2) Put the domain of your IdP on the trusted.url.domains or leave it blank [] 
+3) The value of session.cookie.secure is false, put true if you use https
+
+AUTH SOURCES FILE
+===========================================
+Put your idp entity id in the idp entry
+   

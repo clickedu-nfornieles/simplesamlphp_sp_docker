@@ -1,0 +1,4 @@
+IDP CONFIG
+==============================
+1) Reaneme the saml20-idp-remote.php.dist file to saml20-idp-remote.php
+2) Change the IdP values according to your IdP configuration

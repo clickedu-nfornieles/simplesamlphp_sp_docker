@@ -1,0 +1,5 @@
+Put here your certificate files:
+
+- idp-certificate.crt
+- sp-certificate.crt
+- sp-key.pem

@@ -1,0 +1,15 @@
+version: '3'
+services:
+  simplesamlphp:
+    container_name: simplesamlphp
+    build:      
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8080:80"
+    volumes:
+      - ./config:/var/www/simplesamlphp/config
+      - ./metadata:/var/www/simplesamlphp/metadata
+      - ./cert:/var/www/simplesamlphp/cert
+      - ./apache/simplesamlphp.conf:/etc/apache2/sites-enabled/simplesamlphp.conf
+    

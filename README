@@ -1,0 +1,17 @@
+Docker for SimpleSAMLphp as Service Provider
+===============================================
+
+1) Create on your hosts file the following entry
+127.0.0.0	simplesamlphp.localhost
+
+2) Download SimpleSAMLphp into de simplesaml folder
+3) Create the SP certificate files
+4) Copy them into the cert folder with the name stated into the cert/README file
+5) Copy the certificate file from your IdP using the name stated into the cert/README file
+6) Rename the file config/config.php.dist to config/config.php
+7) Rename the file config/authsources.php.dist to config/authsources.php
+8) Change both files according to your configuration, see the config/README for details
+9) Rename the file metadata/saml20-idp-remote.php.dist to config/saml20-idp-remote.php
+10) Change the file according to your configuration, see the metadata/README for details
+11) Execute docker-compose up -d 
+12) Access to http://simplesamlphp.localhost:8080/admin to see it in action (pwd 123)
